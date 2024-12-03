@@ -5,7 +5,7 @@ from login import page_login;
 if 'authenticated' not in st.session_state:
     st.session_state.authenticated = False
 
-st.set_page_config(page_title="Purchase Challenge GM", layout="wide")
+st.set_page_config(page_title="Purchasing Challenge GM", layout="wide")
 
 # Caso não esteja, manda para a pagina de login
 if not st.session_state.authenticated:
