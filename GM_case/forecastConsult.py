@@ -8,7 +8,7 @@ modal_forecast_delete = Modal(key="modal_forecast_delete", title="Delete record 
 modal_forecast_update = Modal(key="modal_forecast_update", title="Update record Forecast")
 
 # Header
-st.header("Purchase Forecast", divider="gray")
+st.header("Purchasing Forecast", divider="gray")
 
 # Popover com botões de delete e update
 with st.popover("Actions"):
@@ -16,11 +16,9 @@ with st.popover("Actions"):
     update_button = st.button("Update")
 
     if delete_button:
-        st.write("Você clicou em 'Delete'.")
         modal_forecast_delete.open()
 
     if update_button:
-        st.write("Você clicou em 'Update'.")
         modal_forecast_update.open()
 
 st.write("")
